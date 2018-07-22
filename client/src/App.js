@@ -30,8 +30,7 @@ export default class App extends React.Component {
     }
 
     addUserHandler = () => {
-        console.log(this.state.newUser);
-        axios.post('/api/users', {name: true}).then(res => {
+        axios.post('/api/users', this.state.newUser).then(res => {
             console.log(res.data);
         });
     }
