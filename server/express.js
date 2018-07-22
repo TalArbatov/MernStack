@@ -9,9 +9,10 @@ app.get('/api/test', (req,res) => {
     res.send({'hello':'from express'});
 });
 
-app.get('/', (req,res) => {
-   res.sendFile(path.join(__dirname, 'client', 'public', 'index.html'));
-});
+// app.get('/', (req,res) => {
+//    res.sendFile(path.join(__dirname, '/../', 'client', 'public'));
+// });
+app.use('/', express.static(path.join(__dirname, '/../', 'client', 'public')))
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
