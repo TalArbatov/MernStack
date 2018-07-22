@@ -1,11 +1,14 @@
 import React from 'react';
 import ConnectionTest from './components/ConnectionTest';
+import CreateUser from './components/CreateUser';
 import axios from 'axios';
 
 export default class App extends React.Component {
    
     state = {
         message: '',
+        newUser: {
+        }
     }
 
     componentDidMount() {
@@ -26,6 +29,22 @@ export default class App extends React.Component {
         });
     }
 
+    addUserHandler = () => {
+        console.log(this.state.newUser);
+        axios.post('/api/users', {name: true}).then(res => {
+            console.log(res.data);
+        });
+    }
+
+    changeUserFormInputHandler = (type, event) => {
+        let newUser = this.state.newUser;
+        newUser[type] = event.target.value;
+        this.setState({
+            newUser
+        });
+        console.log(this.state);
+    }
+
     render() {
         return(
             <div>
@@ -33,6 +52,7 @@ export default class App extends React.Component {
                     test={this.testConnectionHandler}
                     message={this.state.message}
                 />
+                <CreateUser addUser={this.addUserHandler} changeUserFormInput={this.changeUserFormInputHandler}/>
             </div>
         );
     }
