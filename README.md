@@ -12,4 +12,6 @@ I created this stack overnight to overcome re-writing a big boilerplate every ne
 #### 1. Axios - for async data fetching,
 #### 2. Babel - for writing ES6 and JSX.
 #### 3. Webpack - for bundling all JS to a single Bundle with the babel-loader.
-#### 4.
+#### 4. Node MongoDB Native - An ORM tool to establish connection between the Node application and my MongoDB Database.
+#### 5. Nodemon - for automatic reloading.
+
