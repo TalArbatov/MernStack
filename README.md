@@ -9,9 +9,28 @@ I created this stack overnight to overcome re-writing a big boilerplate every ne
 
 ## Additional Tools
 
-#### 1. Axios - for async data fetching,
-#### 2. Babel - for writing ES6 and JSX.
-#### 3. Webpack - for bundling all JS to a single Bundle with the babel-loader.
-#### 4. Node MongoDB Native - An ORM tool to establish connection between the Node application and my MongoDB Database.
-#### 5. Nodemon - for automatic reloading.
+###### 1. Axios - for async data fetching,
+###### 2. Babel - for writing ES6 and JSX.
+###### 3. Webpack - for bundling all JS to a single Bundle with the babel-loader.
+###### 4. Node MongoDB Native - An ORM tool to establish connection between the Node application and my MongoDB Database.
+###### 5. Nodemon - for automatic reloading.
 
+## Usage
+
+
+###### 1. clone this repository
+
+      git clone https://github.com/TalArbatov/MernStack.git
+  
+  
+###### 2. Install dependencies
+
+      npm install
+  
+###### 3. build client
+
+      npm run client
+  
+###### 4. run development server (localhost:3000)
+
+      npm server
