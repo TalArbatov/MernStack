@@ -34,3 +34,9 @@ I created this stack overnight to overcome re-writing a big boilerplate every ne
 ###### 4. run development server (localhost:3000)
 
       npm server
+      
+      
+## Future
+
+In the future I am planning to create a CLI to initialize an install the MERN stack, maybe adding a CLI option feature
+to update and manage the stack technologies dynamically.
